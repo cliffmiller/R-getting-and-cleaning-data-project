@@ -70,4 +70,5 @@ tidyData <- aggregate(meanAndStdData[, names(meanAndStdData) != c("activity.id",
                   by = list(activity.id = meanAndStdData$activity.id, subject.id = meanAndStdData$subject.id), 
                   mean)
 
-print(tidyData)
+print("Writing Tidy output...")
+write.csv(tidyData, file = "tidyOutput.csv", row.names = FALSE)
