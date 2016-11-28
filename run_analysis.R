@@ -67,7 +67,7 @@ meanAndStdData <- mutate(meanAndStdData, activity.id = activityLabels$activity.t
 
 print("Creating tidy data set")
 tidyData <- aggregate(meanAndStdData[, names(meanAndStdData) != c("activity.id", "subject.id")], 
-                  by = list(activity.id = meanAndStdData$activity.id, subject.id = meanAndStdData$subject.id), 
+                  by = list(activity.label = meanAndStdData$activity.id, subject.id = meanAndStdData$subject.id), 
                   mean)
 
 print("Writing Tidy output...")
