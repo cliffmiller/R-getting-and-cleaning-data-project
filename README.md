@@ -50,4 +50,4 @@ The _mutate_ function from the _dplyr_ package is used to assign the appropriate
 The _aggregate_ function is used to create the _tidy dataset_.  It takes the previously mentioned merged dataset, calculates the mean of each column and groups by the _activity.id_ and the _subject.id_ variables.
 
 ### Writing data out to a file
-The _write.csv_ function is used to output the data to the file system.  The resulting output file is named _tidyOutput.csv_.
+The _write.table_ function is used to output the data to the file system.  The resulting output file is named _tidyOutput.csv_.

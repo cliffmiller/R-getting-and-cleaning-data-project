@@ -71,4 +71,4 @@ tidyData <- aggregate(meanAndStdData[, names(meanAndStdData) != c("activity.id",
                   mean)
 
 print("Writing Tidy output...")
-write.csv(tidyData, file = "tidyOutput.csv", row.names = FALSE)
+write.table(tidyData, file = "tidyOutput.csv", row.names = FALSE)
